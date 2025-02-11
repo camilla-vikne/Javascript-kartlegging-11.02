@@ -83,3 +83,37 @@ let resultMethod = "   Hello, Javascript!    "
   .toUpperCase()
   .replace("JAVASCRIPT", "KARTLEGGING");
 console.log(resultMethod);
+///////////////////////////////////////////
+// more string methods
+
+let str = "Javascript";
+console.log(str.charAt(0));
+
+let newStr = "ABC";
+
+console.log(newStr.charCodeAt(2));
+
+let str1 = "Hello";
+let str2 = "world";
+console.log(str1.concat(" ", str2));
+
+let sliceString = "Javascript";
+console.log(sliceString.slice(0, 4));
+console.log(sliceString.slice(-6));
+
+let fruits = "apple, banana, cherry";
+console.log(fruits.split(","));
+
+// String reversing
+
+// Jeg vil ha kaffe
+
+function reverseString(str) {
+  let charArray = str.split("");
+  let reversedArray = charArray.reverse();
+  let reversedString = reversedArray.join("");
+  return reversedString;
+}
+let originalString = "Jeg vil ha kaffe";
+let reversed = reverseString(originalString);
+console.log(reversed);
